@@ -4,7 +4,7 @@ using System.Reflection;
 using theRightDirection.Library.Extensions;
 using FluentAssertions;
 using System.IO;
-namespace theRightDirection.Library.UnitTests.Extensions
+namespace theRightDirection.Library.UnitTests
 {
     [TestClass]
     public class AssemblyExtensionTest

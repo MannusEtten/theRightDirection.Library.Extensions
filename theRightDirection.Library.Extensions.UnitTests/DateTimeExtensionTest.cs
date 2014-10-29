@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using theRightDirection.Library.Extensions;
+using theRightDirection.Library.Portable.Extensions;
 
-namespace theRightDirection.Library.UnitTests.Extensions
+namespace theRightDirection.Library.UnitTests
 {
     [TestClass]
     public class DateTimeExtensionTest

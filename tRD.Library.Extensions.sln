@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theRightDirection.Library.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theRightDirection.Library.Extensions.UnitTests", "theRightDirection.Library.Extensions.UnitTests\theRightDirection.Library.Extensions.UnitTests.csproj", "{A73CBD74-97DD-4165-B873-4EC37FDB94D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theRightDirection.Library.Portable.Extensions", "theRightDirection.Library.Extensions_portable\theRightDirection.Library.Portable.Extensions.csproj", "{5D8C7FA5-14FD-4132-9877-C282423844FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{A73CBD74-97DD-4165-B873-4EC37FDB94D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A73CBD74-97DD-4165-B873-4EC37FDB94D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A73CBD74-97DD-4165-B873-4EC37FDB94D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8C7FA5-14FD-4132-9877-C282423844FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8C7FA5-14FD-4132-9877-C282423844FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8C7FA5-14FD-4132-9877-C282423844FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8C7FA5-14FD-4132-9877-C282423844FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace theRightDirection.Library.Extensions
+namespace theRightDirection.Library.Portable.Extensions
 {
     public static class DateTimeExtension
     {
