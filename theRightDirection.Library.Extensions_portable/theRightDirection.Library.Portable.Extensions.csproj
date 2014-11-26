@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DateTimeExtension.cs" />
+    <Compile Include="ExcludeFromCopyPropertyAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ObjectExtension.cs" />
     <Compile Include="PropertyInfoComparer.cs" />

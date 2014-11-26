@@ -24,9 +24,19 @@ namespace theRightDirection.Library.Portable.Extensions
                 if (excludedProperties != null
                   && excludedProperties.Contains(commonProperty.Name))
                     continue;
-                var value = commonProperty.GetValue(from, null);
-                commonProperty.SetValue(to, value, null);
+                var hasExcludeAttribute = FindAttribute(commonProperty);
+                if (!hasExcludeAttribute)
+                {
+                    var value = commonProperty.GetValue(from, null);
+                    commonProperty.SetValue(to, value, null);
+                }
             }
+        }
+
+        private static bool FindAttribute(PropertyInfo commonProperty)
+        {
+            var attribute = commonProperty.GetCustomAttribute<ExcludeFromCopyPropertyAttribute>();
+            return attribute != null;
         }
         
     }

@@ -17,11 +17,29 @@ namespace theRightDirection.Library.UnitTests
                 to.Number.ShouldBeEquivalentTo(28);
                 to.Name.ShouldBeEquivalentTo("Stefania");
             }
+
+            [TestMethod]
+            public void CopyPropertiesSetAllPropertiesWithAttributes()
+            {
+                var from = new BaseClass2() { Name = "Stefania", Number = 28, Date = DateTime.Today.Date };
+                var to = InheritClass2.CreateNew(from);
+                to.City = "Budapest";
+                to.Number.ShouldBeEquivalentTo(0);
+                to.Name.ShouldBeEquivalentTo("Stefania");
+            }
         }
 
         class BaseClass
         {
             public string Name { get; set; }
+            public int Number { get; set; }
+            public DateTime Date { get; set; }
+        }
+
+        class BaseClass2
+        {
+            public string Name { get; set; }
+            [ExcludeFromCopyProperty]
             public int Number { get; set; }
             public DateTime Date { get; set; }
         }
@@ -37,4 +55,16 @@ namespace theRightDirection.Library.UnitTests
                 return result;
             }
         }
-}
+
+        class InheritClass2 : BaseClass2
+        {
+            public string City { get; set; }
+
+            public static InheritClass2 CreateNew(BaseClass2 baseClass)
+            {
+                var result = new InheritClass2();
+                baseClass.CopyProperties(result);
+                return result;
+            }
+        }
+    }
