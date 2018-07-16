@@ -1,10 +1,11 @@
 ﻿using System;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using theRightDirection.Library.Portable.Extensions;
 
+// TODO overzetten naar WinUX
 namespace theRightDirection.Library.UnitTests
 {
+    /*
     [TestClass]
         public class ObjectPropertyMapperExtensionTest
         {
@@ -67,4 +68,5 @@ namespace theRightDirection.Library.UnitTests
                 return result;
             }
         }
-    }
+        */
+}
