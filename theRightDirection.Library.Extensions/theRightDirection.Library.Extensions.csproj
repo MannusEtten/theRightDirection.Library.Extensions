@@ -87,6 +87,7 @@
     <Compile Include="Converter.cs" />
     <Compile Include="DataTableExtension.cs" />
     <Compile Include="DirectoryInfoExtension.cs" />
+    <Compile Include="Extensions.String.cs" />
     <Compile Include="ProcessExtension.cs" />
     <Compile Include="ProcessInformation.cs" />
     <Compile Include="TypeConversion.cs" />
